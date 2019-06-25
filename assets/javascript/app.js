@@ -12,4 +12,16 @@ $(document).ready(function() {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   var database = firebase.database();
+
+//add function for trains
+  $("#addTrain").on("click", function (event) {
+    event.preventDefault();
+
+    // Grabs user input
+    var trainName = $("#trainNameInput").val().trim();
+    var trainDest = $("#destinationInput").val().trim();
+    var firstTrain = $("#firstTrainInput").val().trim();
+    var trainFreq = $("#freqInput").val().trim();
+
+
 });
